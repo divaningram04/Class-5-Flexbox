@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  :root {
+    font-size: 16px; 
+  }
+
+  body {
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+  }
+
+
+  section {
+    display: flex; 
+    gap: 20px; 
+  }
+
+  section div {
+    flex: 1; 
+    padding: 20px; 
+  }
+
+  section div:nth-child(1) {
+    background-color: lightblue;
+  }
+
+  section div:nth-child(2) {
+    background-color: lightgreen;
+  }
+
+  section div:nth-child(3) {
+    background-color: lightcoral;
+  }
+
+
+  @media (max-width: 800px) {
+    section {
+      flex-direction: column; 
+    }
+  }
